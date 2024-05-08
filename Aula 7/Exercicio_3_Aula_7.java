@@ -2,7 +2,7 @@ package main;
 import java.util.Scanner;
 import java.util.Locale;
 
-//Exercicio 2
+//Exercicio 3
 
 /*Crie uma matriz 4x4 de decimais, preencha a matriz e depois:
 a) Exiba os valores da sua diagonal principal;
