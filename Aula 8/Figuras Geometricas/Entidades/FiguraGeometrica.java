@@ -3,11 +3,7 @@ package FigurasGeometricas.Entidades;
 public abstract class FiguraGeometrica {
     public String nome;
 
-    public double calcArea(){
-        return 0;
-    }
+    public abstract double calcArea();
 
-    public double calcPerimetro(){
-        return 0;
-    }
+    public abstract double calcPerimetro();
 }
