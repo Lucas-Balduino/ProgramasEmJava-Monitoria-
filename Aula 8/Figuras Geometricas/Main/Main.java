@@ -25,38 +25,34 @@ public class Main {
         do{
             System.out.println("Digite o numero correspondente com a forma geometrica desejada: (1- Quadrado, 2-Circulo, 3- Retangulo)");
             escolha = sc.nextInt();
+            Quadrado x = new Quadrado();
+            Circulo y = new Circulo();
+            Triangulo z = new Triangulo();
 
             switch (escolha) {
                 case 1:
-                    Quadrado x = new Quadrado();
                     System.out.println("Digite o valor do lado do quadrado");
                     x.lado = sc.nextDouble();
-                    System.out.println("O valor da area desse quadrado é ");
-                    x.calcArea();
-                    System.out.println("O valor do perimetro desse quadrado é ");
-                    x.calcPerimetro();
+                    System.out.println("O valor da area desse quadrado é "+x.calcArea());
+                    System.out.println("O valor do perimetro desse quadrado é "+x.calcPerimetro());
+                    
                     break;
             
                 case 2:
-                    Circulo y = new Circulo();
                     System.out.println("Digite o valor do lado do Circulo");
                     y.raio = sc.nextDouble();
-                    System.out.println("O valor da area desse Circulo é ");
-                    y.calcArea();
-                    System.out.println("O valor do perimetro desse Circulo é ");
-                    y.calcPerimetro();
+                    System.out.println("O valor da area desse Circulo é "+y.calcArea());
+                    System.out.println("O valor do perimetro desse Circulo é "+y.calcPerimetro());
                     break;
             
                 case 3:
-                    Triangulo z = new Triangulo();
                     System.out.println("Digite o valor do lado do Triangulo");
                     z.lado = sc.nextDouble();
                     System.out.println("Digite o valor da altura do Triangulo");
                     z.altura = sc.nextDouble();
-                    System.out.println("O valor da area desse Triangulo é ");
-                    z.calcArea();
-                    System.out.println("O valor do perimetro desse Triangulo é ");
-                    z.calcPerimetro();
+                    System.out.println("O valor da area desse Triangulo é "+ z.calcArea());
+                    System.out.println("O valor do perimetro desse Triangulo é "+z.calcPerimetro());
+                    
                     break;
             
                 default:
